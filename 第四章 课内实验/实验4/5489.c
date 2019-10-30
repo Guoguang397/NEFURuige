@@ -1,5 +1,24 @@
 #include <stdio.h>
 #include <stdlib.h>
+//常规简单方法
+int main()
+{
+    int a,b;
+	scanf("%d",&a);
+	for(int i=0;i<4;i++)
+	{
+		b=a%10;
+		a/=10;
+		b+=3;
+		b%=10;
+		printf("%d",b);
+	}
+	return 0;
+}
+
+/* 原始文件（数组）
+#include <stdio.h>
+#include <stdlib.h>
 
 int main()
 {
@@ -16,4 +35,4 @@ int main()
 		printf("%d",a[i]);
 	}
 	return 0;
-}
+}*/
