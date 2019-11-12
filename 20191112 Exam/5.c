@@ -36,7 +36,7 @@ int main()
         }
         if(n==0)
         {
-            printf("%d ",a*2);
+            printf("%d  ",a*2);
             num++;
             n=1;
         }
@@ -44,7 +44,7 @@ int main()
     }
     if(n==0)
     {
-        printf("%d ",a*2);
+        printf("%d  ",a*2);
         num++;
         n=1;
     }
