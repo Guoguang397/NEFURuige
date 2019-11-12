@@ -24,7 +24,7 @@ int main()
     {
         if(f(i-0.2)*f(i)<0)
         {
-            printf("%.1f %.1f %.1f\n",i-0.2,f(i-0.2),f(i));
+            printf("%.1f %.1f %.1f\n",i,f(i-0.2),f(i));
             break;
         }
     }
