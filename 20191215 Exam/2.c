@@ -4,7 +4,7 @@
 int main()
 {
 	int n,a[5],b[5],sumg=0,sumt=0,avag,avat,good=0;
-	while(scanf("%d",&n)!=-1)
+	while(scanf("%d",&a[0])!=-1)
 	{
 		sumg=a[0];
 		sumt=good=0;
