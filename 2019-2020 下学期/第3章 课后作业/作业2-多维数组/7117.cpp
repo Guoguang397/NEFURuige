@@ -18,6 +18,7 @@ int main()
 		else
 		{
 			y=n/2-x;
+			if(n%2)y++;
 			x=0;
 		}
 	}
