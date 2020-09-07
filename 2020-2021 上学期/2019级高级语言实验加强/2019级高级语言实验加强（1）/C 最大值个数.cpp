@@ -1,23 +1,23 @@
-#include <bits/stdc++.h>
-using namespace std;
+#include <stdio.h>
+#include <string.h>
 
 int main()
 {
 	int n,ans,bucket[101],tmp;
-	while(cin>>n)
+	while(~scanf("%d",&n))
 	{
 		memset(bucket,0,sizeof(bucket));
 		ans=0;
 		while(n--)
 		{
-			cin>>tmp;
+			scanf("%d",&tmp);
 			bucket[tmp]++;
 		}
 		for(int i=100;i>=0;i--)
 		{
 			if(bucket[i])
 			{
-				cout<<i<<" "<<bucket[i]<<endl;
+				printf("%d %d\n",i,bucket[i]);
 				break;
 			}
 		}

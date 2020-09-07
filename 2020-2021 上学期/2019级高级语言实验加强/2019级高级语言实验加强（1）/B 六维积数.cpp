@@ -1,10 +1,9 @@
-#include <bits/stdc++.h>
-using namespace std;
+#include <stdio.h>
 
 int main()
 {
 	int n,ans;
-	while(cin>>n)
+	while(~scanf("%d",&n))
 	{
 		ans=1;
 		while(n>0)
@@ -12,7 +11,7 @@ int main()
 			ans*=n%10;
 			n/=10;
 		}
-		cout<<ans<<endl;
+		printf("%d\n",ans);
 	}
 	return 0;
 }
