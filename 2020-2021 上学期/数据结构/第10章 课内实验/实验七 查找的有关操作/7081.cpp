@@ -82,8 +82,8 @@ int main()
 	inorderTraversal(T);
 	cout<<endl;
 	cin>>num;
-	if(queryBST(T,num))cout<<"该数存在\n";
-	else cout<<"该数不存在\n";
+	if(queryBST(T,num))cout<<"璇ユ暟瀛樺湪\n";
+	else cout<<"璇ユ暟涓嶅瓨鍦╘n";
 	cin>>num;
 	deleteBSTNode(T,num);
 	inorderTraversal(T);
