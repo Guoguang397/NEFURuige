@@ -1,33 +1,22 @@
 #include <iostream>
 using namespace std;
 
-template <typename T> class Maxnum
+template <typename T> T getMax(T arr[],int n)
 {
-	T max;
-public:
-	Maxnum(T arr[],int n)
+	int mai=0;
+	for(int i=1;i<n;i++)
 	{
-		int mai=0;
-		for(int i=1;i<n;i++)
-		{
-			if(arr[i]>arr[mai])mai=i;
-		}
-		max=arr[mai];
+		if(arr[i]>arr[mai])mai=i;
 	}
-	T getMax()
-	{
-		return max;
-	}
-};
+	return arr[mai];
+}
 
 int main()
 {
 	int int_array[10]={2,4,7,1,9,4,2,6,3,1};
 	double double_array[]={2.2,4.4,7.8,1.4,9.9,4.6,2.3,6.6,3.1,1.3};
-	Maxnum<int> mint(int_array,10);
-	cout<<"int max= "<<mint.getMax()<<endl;
-	Maxnum<double> mdouble(double_array,10);
-	cout<<"double max= "<<mdouble.getMax()<<endl;
+	cout<<"int max= "<<getMax<int>(int_array,10)<<endl;
+	cout<<"double max= "<<getMax<double>(double_array,10)<<endl;
 	return 0;
 }
 
