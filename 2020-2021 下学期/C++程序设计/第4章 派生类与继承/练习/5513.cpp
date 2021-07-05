@@ -19,7 +19,7 @@ public:
 	}
 };
 
-class Student:public Person
+class Student:private Person
 {
 	int age;
 	int credit;

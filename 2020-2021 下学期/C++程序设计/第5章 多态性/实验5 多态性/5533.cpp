@@ -6,13 +6,13 @@ class Car
 protected:
 	int distance;
 public:
-	double travel_time()
+	virtual double travel_time()
 	{
 		return distance/128.0;
 	}
 	void show()
 	{
-		cout<<"base time is "<<travel_time()<<endl;
+		cout<<"base time is "<<Car::travel_time()<<endl;
 	}
 };
 

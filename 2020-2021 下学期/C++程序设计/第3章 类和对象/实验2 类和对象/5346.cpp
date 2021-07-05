@@ -11,10 +11,11 @@ class Cylinder
 		{
 			this->r=r;
 			this->h=h;
+			v=PI*r*r*h; 
 		}
 		void vol()
 		{
-			printf("volume is %.1f\n",PI*r*r*h);
+			printf("volume is %.1f\n",v);
 		}
 };
 
